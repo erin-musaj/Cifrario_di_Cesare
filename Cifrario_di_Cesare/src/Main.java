@@ -4,7 +4,7 @@ public class Main {
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             int ascii = (int)c;
-            if((65<=ascii && ascii>=90) || (97<=ascii && ascii>=122)){
+            if((65<=ascii && ascii<=90) || (97<=ascii && ascii<=122)){
                 c = (char)(ascii==122||ascii==90? ascii-25:ascii+1);
             }
             rit+=c+"";
